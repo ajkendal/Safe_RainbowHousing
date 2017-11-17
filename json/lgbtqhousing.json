@@ -5,32 +5,36 @@
         {
            "shelter": "Shelter Name",
             "ageFocus": "Youth",
-            "address": "1234 West 1248th St",
-            "city": "San Francisco",
-            "state": "CA",
+            "address": "2228 West 18th Place",
+            "city": "Chicago",
+            "state": "IL",
             "zip": 60608,
+            "url": "www.ajkendal.github.io",
             "checkIn": "9:00 PM",
             "duration": "1 Night",
-            "phone": "305-234-4543",
+            "phone1": "305-234-4543",
+            "phone2": "",
             "email": "shelter@name.edu",
             "dateAdded": "11/17/2017",
-            "lat": 12.3232,
-            "lng": -34.432
+            "lat": 41.856875,
+            "lng": -87.682115
         },
         {
             "shelter": "Shelter 2 Name",
             "ageFocus": "Elder",
-            "address": "1234 West 1248th St",
-            "city": "San Francisco",
-            "state": "CA",
+            "address": "15531 Southwest 104th Avenue",
+            "city": "Miami",
+            "state": "FL",
             "zip": 33157,
+            "url": "www.ajkendal.github.io",
             "checkIn": "9:00 PM",
             "duration": "1 Night",
-            "phone": "305-234-4543",
+            "phone1": "305-234-4543",
+            "phone2": "",
             "email": "shelter2@name.edu",
             "dateAdded": "11/16/2017",
-            "lat": 12.3232,
-            "lng": -34.432
+            "lat": 25.624683,
+            "lng": -80.363310
         } 
     ]
 }
