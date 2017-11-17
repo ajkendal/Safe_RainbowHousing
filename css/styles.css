@@ -22,9 +22,11 @@
     }
 }*/
 
-form{
+#content{
     margin: auto;
     display: block;
+    width: 80%;
+}
+form{
     margin-top: 30px;
-    width: 80% !important;
 }
