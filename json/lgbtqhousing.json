@@ -1,0 +1,36 @@
+{
+    "country": "USA",
+    "shelterType": "lgbtq+",
+    "shelters": [
+        {
+           "shelter": "Shelter Name",
+            "ageFocus": "Youth",
+            "address": "1234 West 1248th St",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": 60608,
+            "checkIn": "9:00 PM",
+            "duration": "1 Night",
+            "phone": "305-234-4543",
+            "email": "shelter@name.edu",
+            "dateAdded": "11/17/2017",
+            "lat": 12.3232,
+            "lng": -34.432
+        },
+        {
+            "shelter": "Shelter 2 Name",
+            "ageFocus": "Elder",
+            "address": "1234 West 1248th St",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": 33157,
+            "checkIn": "9:00 PM",
+            "duration": "1 Night",
+            "phone": "305-234-4543",
+            "email": "shelter2@name.edu",
+            "dateAdded": "11/16/2017",
+            "lat": 12.3232,
+            "lng": -34.432
+        } 
+    ]
+}
