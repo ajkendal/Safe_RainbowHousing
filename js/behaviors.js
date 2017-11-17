@@ -16,7 +16,7 @@ $( document ).ready(function() {
     $("#submit").click(function(e){
         console.log("submitted");
         var query = {};
-        query.location = $("#search_location").val();
+        query.location = $("#autocomplete").val();
         query.distance = $("#distance").val();
         query.age = $('#ageForm input[type=radio]:checked').val();
         console.log(query);
