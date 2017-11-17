@@ -31,7 +31,7 @@ body, html{
     display: block;
     width: 80%;
 }
-form{
+form, button{
     margin-top: 30px;
 }
 

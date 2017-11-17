@@ -53,7 +53,7 @@
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                      <input placeholder="New York" id="first_name" type="text" class="validate">
+                      <input placeholder="New York" id="search_location" type="text" class="validate">
                       <label for="search_location">Search Location</label>
                     </div>
                   </div>
@@ -61,8 +61,8 @@
                 <form class="col s12">
                     Maximum Distance
                     <div class="row">
-                        <p class="col s12 showDistance">
-                            50 miles
+                        <p class="col s12">
+                            <p class="showDistance">x miles</p>
                         </p>
                         <p class="col s12 range-field">
                             <div>
@@ -79,22 +79,28 @@
                         </p>
                     </div>
                </form>
-               <form class="col s12">
+               <form class="col s12" id="ageForm">
                     Age Group
                     <p>
-                      <input name="age" type="radio" id="ageY" />
+                      <input name="age" type="radio" id="ageY" value="Youth" />
                       <label for="ageY">Youth</label>
                     </p>
                     <p>
-                      <input name="age" type="radio" id="ageM" />
+                      <input name="age" type="radio" id="ageM" value="Middle"/>
                       <label for="ageM">Middle Age</label>
                     </p>
                     <p>
-                      <input name="age" type="radio" id="ageE" />
+                      <input name="age" type="radio" id="ageE" value="Elder"/>
                       <label for="ageE">Elder</label>
                     </p>
                    
                 </form>
+        
+                <button id="submit" class="btn-large waves-effect waves-light" type="submit" name="action">Search
+                    <i class="material-icons right">send</i>
+                </button>
+            
+        
               </div>
 		</div>
         
@@ -102,5 +108,6 @@
         <script src="js/materialize.js"></script>
         <!-- jQuery -->
         <script>$(".button-collapse").sideNav();</script>
+        <script src="js/behaviors.js"></script>
     </body>
 </html>
