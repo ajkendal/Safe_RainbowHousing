@@ -22,9 +22,11 @@
 		</div>
         
    		<div id="headers">
-            <img class="logo" src="img/RainbowHouseLogo.png">
-            <h1>RainbowHousing</h1>
-            <h2>LGBTQ+ housing for all generations</h2>
+            <img class="logo col s6" src="img/RainbowHouseLogo.png">
+            <div class="col s6">
+                <h1>RainbowHousing</h1>
+                <h2>LGBTQ+ housing for all generations</h2>
+            </div>
    		</div>
         
 		<div id="navbar">
@@ -46,7 +48,43 @@
 		</div>
         
    		<div id="content">
-   		
+   		   <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="New York" id="first_name" type="text" class="validate">
+                      <label for="search_location">Search Location</label>
+                    </div>
+                  </div>
+                </form>
+                <form class="col s12">
+                    Distance
+                    <p>
+                      <input name="distance" type="radio" id="age1" />
+                      <label for="close">Close</label>
+                    </p>
+                    <p>
+                      <input name="distance" type="radio" id="age2" />
+                      <label for="far">Far</label>
+                    </p>
+                </form>
+               <form class="col s12">
+                    Age
+                    <p>
+                      <input name="age" type="radio" id="age1" />
+                      <label for="youth">Youth (18 - 24)</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age2" />
+                      <label for="adult">Adult</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age3" />
+                      <label for="elder">Elder</label>
+                    </p>
+                   
+                </form>
+              </div>
 		</div>
         
         <!-- JavaScript -->

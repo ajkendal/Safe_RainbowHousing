@@ -11,5 +11,20 @@
 .logo{
     display: block;
     width: 50%;
+    max-width: 200px;
     margin: auto;
+}
+
+/*@media (min-width: 500px){
+    .logo{
+        display: inline-block;
+        float: left;
+    }
+}*/
+
+form{
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    width: 80% !important;
 }
