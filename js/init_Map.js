@@ -1,7 +1,7 @@
 var map;
 
 function initMap() {
-    
+    console.log("here");
     var markers = jsonObject.shelters;
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -19,6 +19,8 @@ function initMap() {
             map: map,
             title: markers[x].shelter,
         });
+        
+        console.log(map);
         
         google.maps.event.addListener(marker, 'click', (function(marker, x) {
             return function() {
@@ -45,4 +47,3 @@ function initMap() {
         })(marker, x));
     }
 }
-initMap();

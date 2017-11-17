@@ -6,7 +6,6 @@ $( document ).ready(function() {
     
     //$(".showDistance")[0].text(function(){ return "" + slider.val() + " miles"});
     
-    
     slider.change(function(){
         console.log("slid " + slider.val());
         //showDistance.innerHTML("" + slider.val() + " miles");
@@ -20,6 +19,8 @@ $( document ).ready(function() {
         query.distance = $("#distance").val();
         query.age = $('#ageForm input[type=radio]:checked').val();
         console.log(query);
+        
+        initMap();
     
     });
         
