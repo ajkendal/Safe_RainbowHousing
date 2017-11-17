@@ -12,9 +12,8 @@
         <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <!-- JavaScript -->
         <script src="js/initJson.js" type="application/javascript"></script>
-        <script src="js/getZipRadius.js" type="application/javascript"></script>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/auto_complete.js" type="application/javascript"></script>
+        
     </head>
 
     <body>
@@ -53,7 +52,7 @@
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                      <input placeholder="New York" id="first_name" type="text" class="validate">
+                      <input id="autocomplete" placeholder="New York" id="first_name" type="text" class="validate">
                       <label for="search_location">Search Location</label>
                     </div>
                   </div>
@@ -88,8 +87,14 @@
               </div>
 		</div>
         
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC3RQ07XNEUnYvRpfaos9YoVABI_LfuUs&libraries=places&callback=initAutocomplete">
+        </script>
+    
         <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
+        
         <!-- jQuery -->
         <script>$(".button-collapse").sideNav();</script>
     </body>
