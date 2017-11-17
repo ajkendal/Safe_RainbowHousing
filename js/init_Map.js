@@ -2,15 +2,15 @@ var map;
 
 function initMap() {
     
-    //console.log(jsonObject);
+    console.log(jsonObject);
     
     var markers = jsonObject.shelters;
     
     //console.log(markers);
-    var uluru = {lat: -25.363, lng: 131.044};
+
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
-        center: uluru
+        center: {"lat": 40.757412, "lng": -73.994202}
     });
     
     for (var x = 0; x < markers.length; x++){

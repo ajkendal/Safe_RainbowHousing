@@ -9,7 +9,7 @@ function loadJSON(callback) {
     jsonShelters.onreadystatechange = function () {
         if (jsonShelters.readyState == 4 && jsonShelters.status == "200") {
             jsonObject = JSON.parse(jsonShelters.responseText);
-            //console.log(jsonObject);
+            console.log(jsonObject);
           }
     };
     jsonShelters.send(null);  
