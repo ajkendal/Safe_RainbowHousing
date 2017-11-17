@@ -1,0 +1,36 @@
+body, html{
+    width: 100%;
+}
+
+#headers h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+#headers h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.logo{
+    display: block;
+    width: 50%;
+    max-width: 200px;
+    margin: auto;
+}
+
+/*@media (min-width: 500px){
+    .logo{
+        display: inline-block;
+        float: left;
+    }
+}*/
+
+#content{
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+form{
+    margin-top: 30px;
+}
