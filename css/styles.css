@@ -33,11 +33,25 @@ body, html{
     display: block;
     width: 80%;
 }
-form{
+form, button{
     margin-top: 30px;
 }
 
+<<<<<<< HEAD
 #map {
     height: 100%;
     width: 90%;
 }
+=======
+.showDistance{
+    font-size: 20px;
+}
+
+.milemarkers{
+    width: 100%;
+}
+.milemarkers td{
+    width: 33%;
+    padding: 0px;
+}
+>>>>>>> 031a745db3613540a0eedabe16221307d2c63447
