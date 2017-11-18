@@ -29,20 +29,19 @@ function initMap(userInfo) {
     
     if (userInfo.age === "Youth") {
         markers = markers.filter(function(shelters) {
-            return (shelters.ageFocus === "Youth" && shelters.ageFocus === "All");
+            return (shelters.ageFocus == "Youth" || shelters.ageFocus == "All");
         });
     }
     else if (userInfo.age === "Middle") {
         markers = markers.filter(function(shelters) {
-            return (shelters.ageFocus === "Adults" && shelters.ageFocus === "All");
+            return (shelters.ageFocus === "Adults" || shelters.ageFocus === "All");
         });
     }
     else if (userInfo.age === "Elder") {
         markers = markers.filter(function(shelters) {
-            return (shelters.ageFocus === "Elders" && shelters.ageFocus === "All");
+            return (shelters.ageFocus === "Elders" || shelters.ageFocus === "All");
         });
     }
-    
     
     for (var x = 0; x < markers.length; x++){
         var infoWindow = new google.maps.InfoWindow();
@@ -57,13 +56,13 @@ function initMap(userInfo) {
             return function() {
                 var completeAddress = ("https://www.google.com/maps/place/" + markers[x].address.replace(/\s/g, "+") + ",+" + markers[x].city + ",+" + markers[x].state + "+" + markers[x].zip);
                 
-                var phoneText = ("<b>Phone: </b>" + "<a href='tel:" + markers[x].phone1 + "'>" + markers[x].phone1 + "<\a>"); 
+                var phoneText = ("<b>Phone: </b>" + "<a href='tel:" + markers[x].phone1 + "'>" + markers[x].phone1 + "</a>"); 
                 if (markers[x].phone2 != " "){
-                    phoneText += (" <b>Phone 2: </b>" + "<a href='tel:" + markers[x].phone2 + "'>" + markers[x].phone2 + "<\a>");
+                    phoneText += ("<br /><b>Phone 2: </b>" + "<a href='tel:" + markers[x].phone2 + "'>" + markers[x].phone2 + "</a>");
                 }
                 var emailText = "";
                 if (markers[x].email != " "){
-                    emailText += ("<b>Email: </b>: " + "<a href='mailto:" + markers[x].email + "'>" + markers[x].email + "<\a>");
+                    emailText += ("<b>Email: </b>: " + "<a href='mailto:" + markers[x].email + "'>" + markers[x].email + "</a>");
                 }
                 
                 var extraInfo = "<br />";
