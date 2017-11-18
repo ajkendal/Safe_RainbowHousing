@@ -77,10 +77,10 @@ function initMap(userInfo) {
                     extraInfo += ("<br /><b>Length of stay: </b>" + markers[x].duration);
                 }
                     
-                var string = ("<h4>" + markers[x].shelter + "</h3><br />" +
+                var string = ("<div class='infoBoxes'><h5>" + markers[x].shelter + "</h5><br />" +
                               "<a target='_blank' href='" + completeAddress + "'>" +  markers[x].address + ", " + markers[x].city +  ", " + markers[x].state + " " + markers[x].zip + "</a><br />" +
                               "<b>Website: </b><a target='_blank' href='" + markers[x].url + "'>" + markers[x].url + "</a><br />" +
-                              phoneText + "<br />" + emailText + extraInfo);
+                              phoneText + "<br />" + emailText + extraInfo + "</div>");
                 
                 infoWindow.setOptions({maxWidth: 350}); 
                 infoWindow.setContent(string);
