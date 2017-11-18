@@ -49,7 +49,7 @@
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                        <input id="autocomplete"  placeholder="New York" id="search_location" type="text" class="validate">
+                        <input id="autocomplete"  placeholder="ex: New York, NY" id="search_location" type="text" class="validate">
                         
                       <label for="search_location">Search Location</label>
                     </div>
@@ -58,7 +58,7 @@
                 <form class="col s12">
                     <div class="row">
                         <p class="col s12">
-                            <p class="showDistance">Distance From Location</p>
+                            <p class="showDistance"><b>Distance From Location</b></p>
                         </p>
                         <p class="col s12 range-field">
                             <div>
@@ -77,20 +77,23 @@
                     </div>
                </form>
                <form class="col s12" id="ageForm" >
-                    Age Group:
-                    <p>
+                   <b>Age Group:</b>
+                   <p style="padding-right: 5%;">
+                      <input name="age" type="radio" id="ageA" value="All" checked="checked"/>
+                      <label for="ageA">All</label>
+                    </p>
+                    <p style="padding-right: 5%;">
                       <input name="age" type="radio" id="ageY" value="Youth" />
                       <label for="ageY">Youth</label>
                     </p>
-                    <p>
+                    <p style="padding-right: 5%;">
                       <input name="age" type="radio" id="ageM" value="Middle"/>
                       <label for="ageM">Middle Age</label>
                     </p>
-                    <p>
+                    <p style="padding-right: 5%;">
                       <input name="age" type="radio" id="ageE" value="Elder"/>
                       <label for="ageE">Elder</label>
                     </p>
-                   
                 </form>
         
                 <button id="submit" class="btn-large waves-effect waves-light" type="submit" name="action">Search
