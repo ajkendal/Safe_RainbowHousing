@@ -11,7 +11,6 @@ $( document ).ready(function() {
         //showDistance.innerHTML("" + slider.val() + " miles");
     });
     
-    
     $("#submit").click(function(e){
         //console.log("submitted");
         var query = {};
@@ -25,6 +24,5 @@ $( document ).ready(function() {
         initMap(query);
     
     });
-        
     
 });

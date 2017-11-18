@@ -29,9 +29,10 @@ body, html{
 }*/
 
 #content{
-    margin: auto;
+    margin: 0 auto;
     display: block;
     width: 80%;
+    padding-bottom: 5%;
 }
 form, button{
     margin-top: 30px;
@@ -45,6 +46,7 @@ form, button{
 #map {
     height: 100%;
     width: 100%;
+    color: black;
 }
 .showDistance{
     font-size: 20px;
@@ -56,4 +58,14 @@ form, button{
 .milemarkers td{
     width: 33%;
     padding: 0px;
+}
+#ageForm p {
+    margin: 0 auto;
+    display: inline;
+    width: 100%;
+    justify-content: space-around;
+}
+#ageForm, 
+#ageForm label {
+    font-size: 20px;
 }
