@@ -49,7 +49,7 @@ form, button{
     color: black;
 }
 .showDistance{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .milemarkers{
@@ -67,7 +67,7 @@ form, button{
 }
 #ageForm, 
 #ageForm label {
-    font-size: 20px;
+    font-size: 18px;
 }
 .infoBoxes {
     color: black;
