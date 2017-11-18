@@ -2,8 +2,8 @@
 
 ## Chicago Hack 4 Queer Youth - 2017
 
-Sponsored by oSTEM, Maven, QTC 
-Hackathon Challange: Intergenerational - LGBTQ+ Youth & Elders
+Sponsored by oSTEM, Maven, QTC<br />
+Hackathon Challange: Intergenerational - LGBTQ+ Youth & Elders<br />
 Time Limit: 10 Hours
 
 ### Developers 
