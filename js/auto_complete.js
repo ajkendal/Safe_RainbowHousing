@@ -7,7 +7,7 @@ function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
         /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
         {types: ['geocode']});
-        console.log("auto complete");
+        //console.log("auto complete");
 }
 
 // Bias the autocomplete object to the user's geographical location,

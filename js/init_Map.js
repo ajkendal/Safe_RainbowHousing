@@ -1,14 +1,29 @@
 var map;
+var geocoder;
 
-function initMap() {
-    console.log("here");
+function initMap(userInfo) {
+    geocoder = new google.maps.Geocoder();
+    
     var markers = jsonObject.shelters;
-
+    
+    var z0 = 20.0, z1 = 3.0, m0 = 1.0, m1 = 50.0;
+    var miles = parseInt(userInfo.distance);
+    
+    var userZoom = (z0 * (m1 - miles) + z1 * (miles - m0))/(m1-m0);
+    var userPosition;
+    
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: {"lat": 40.757412, "lng": -73.994202}
+        zoom:  parseInt(userZoom)
     });
-
+    
+    geocoder.geocode( { 'address': userInfo.location}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            var latitude = results[0].geometry.location.lat();
+            var longitude = results[0].geometry.location.lng();
+            userPosition = {lat: parseFloat(latitude), lng: parseFloat(longitude) };
+            map.setCenter(userPosition);
+        } 
+    }); 
     
     for (var x = 0; x < markers.length; x++){
 
@@ -19,8 +34,6 @@ function initMap() {
             map: map,
             title: markers[x].shelter,
         });
-        
-        console.log(map);
         
         google.maps.event.addListener(marker, 'click', (function(marker, x) {
             return function() {
